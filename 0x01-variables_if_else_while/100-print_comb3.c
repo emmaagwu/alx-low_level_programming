@@ -12,21 +12,21 @@ int j = 0;
 	{
 		while (j <= 9)
 		{
-		       if (i != j && i < j)
-		       {
-			       putchar(i + '0');
-			       putchar(j + '0');
-			       if (!(i == 8 && j== 9))
-			       {
-				       putchar(',');
-				       putchar(' ');
-			       }
-		       }
+			if (i != j && i < j)
+			{
+				putchar(i + '0');
+				putchar(j + '0');
+				if (!(i == 8 && j == 9))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		j++;
 		}
-	i++; 
+	i++;
 	j = 0;
-	}    
+	}
 putchar('\n');
-return 0; 
-} 
+return (0);
+}
