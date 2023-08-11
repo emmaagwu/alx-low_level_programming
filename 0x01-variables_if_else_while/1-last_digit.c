@@ -6,7 +6,7 @@
  * main - this is the main function.
  * Return: 0 when successful.
  * betty style doc for function main goes there
- * /
+ */
 int main(void)
 {
 int n;
