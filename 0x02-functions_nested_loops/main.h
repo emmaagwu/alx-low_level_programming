@@ -1,7 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-// Prototype of the _putchar function
-void _putchar(char c);
+/* Prototype of the _putchar function */
 
-#endif // MAIN_H
+int _putchar(char c);
+
+#endif /* MAIN_H */
