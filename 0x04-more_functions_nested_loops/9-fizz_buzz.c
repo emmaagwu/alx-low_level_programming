@@ -4,7 +4,7 @@
 /**
  *main - main function
  *
- *Description: prints the numbers 1 - 100 
+ *Description: prints the numbers 1 - 100
  *Fizz for multiples of 3, Buzz for multiples of 5,
  *and FizzBuzz for multiples of both
  *
@@ -30,4 +30,3 @@ int main(void)
 	printf("\n");
 	return (0);
 }
-			
