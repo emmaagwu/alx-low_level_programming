@@ -17,7 +17,7 @@ char *ptr;
 if (str == NULL)
 return (NULL);
 
-i = 0;
+i = 1;
 while (*(str + i) != '\n')
 i++;
 size = i;
