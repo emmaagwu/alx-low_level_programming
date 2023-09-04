@@ -17,11 +17,11 @@ char *ptr;
 if (str == NULL)
 return (NULL);
 
-i = 1;
+i = 0;
 while (*(str + i) != '\n')
 i++;
 size = i;
-ptr = (char *)malloc(sizeof(char) * size);
+ptr = (char *)malloc(sizeof(char) * size + 1);
 if (ptr == NULL)
 return (NULL);
 else
