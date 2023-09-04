@@ -21,7 +21,7 @@ i = 0;
 while (*(str + i) != '\n')
 i++;
 size = i;
-ptr = (char *)malloc(sizeof(char) * size + 1);
+ptr = (char *)malloc(sizeof(char) * (size + 1));
 if (ptr == NULL)
 return (NULL);
 else
