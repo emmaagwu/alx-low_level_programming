@@ -2,7 +2,7 @@
 
 /**
  *free_list - frees the nodes
- *@head - the head pointer
+ *@head: the head pointer
  *
  */
 
@@ -14,6 +14,7 @@ void free_list(list_t *head)
 	{
 		Temp = head;
 		head = head->next;
+		free(Temp->str);
 		free(Temp);
 	}
 }
