@@ -10,7 +10,7 @@
 
 size_t print_list(const list_t *h)
 {
-	long unsigned nodes = 0;
+	unsigned long nodes = 0;
 
 	if (h == NULL)
 	{
