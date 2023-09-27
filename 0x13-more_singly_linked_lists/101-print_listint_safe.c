@@ -3,20 +3,20 @@
 /**
  *loop_list - checks the unique node in looped list
  *@head: pointer to the list
- *@Return: the number of nodes
+ *Return: the number of nodes
  */
 
 size_t loop_list(const listint_t *head)
 {
 	const listint_t *one, *two;
-	size_t nodes =1;
+	size_t nodes = 1;
 
 	if (head == NULL || head->next == NULL)
 		return (0);
 	one = head->next;
 	two = (head->next)->next;
 
-	while(two)
+	while (two)
 	{
 		if (one == two)
 		{
@@ -25,15 +25,15 @@ size_t loop_list(const listint_t *head)
 			{
 				nodes++;
 				one = one->next;
-				two = two->next;				
+				two = two->next;
 			}
 
 			one = one->next;
 
 			while (one != two)
-                        {
-                                nodes++;
-                                one = one->next;
+			{
+				nodes++;
+				one = one->next;
 			}
 
 			return (nodes);
