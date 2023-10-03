@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
+#include <elf.h>
 #include <sys/stat.h>
 #include <errno.h>
 #include <unistd.h>
@@ -16,5 +17,6 @@ int create_file(const char *filename, char *text_content);
 int append_text_to_file(const char *filename, char *text_content);
 char *build_buffer(char *file);
 void close_file(int fileId);
+
 
 #endif
