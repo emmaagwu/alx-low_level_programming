@@ -19,6 +19,5 @@ size_t dlistint_len(const dlistint_t *h)
 		current = current->next;
 		node++;
 	}
-	printf("%ld\n", node);
 	return (node);
 }
